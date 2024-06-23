@@ -1,0 +1,11 @@
+start	end	text
+0	4040	Welcome to my ultimate Gitmastery course.
+4040	7200	Over the next five hours, you're going to learn everything you need to know to use Git
+7200	9680	like a pro and work effectively with others.
+9680	14120	We're going to start off by talking about the fundamental concepts like what is Git,
+14120	17760	how to install and configure it, and then in each section, we're going to explore a
+17760	19360	different set of Git tools.
+19360	24520	We'll cover creating snapshots of your code, browsing your project history, branching and
+24520	28480	merging, collaborating with others using GitHub, and rewriting history.
+28480	31400	I'm Mosh Hamidani and I'm super excited to be your instructor.
+31400	32840	Now let's jump in and get started.

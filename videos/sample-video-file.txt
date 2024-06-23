@@ -1,0 +1,10 @@
+Welcome to my ultimate Gitmastery course.
+Over the next five hours, you're going to learn everything you need to know to use Git
+like a pro and work effectively with others.
+We're going to start off by talking about the fundamental concepts like what is Git,
+how to install and configure it, and then in each section, we're going to explore a
+different set of Git tools.
+We'll cover creating snapshots of your code, browsing your project history, branching and
+merging, collaborating with others using GitHub, and rewriting history.
+I'm Mosh Hamidani and I'm super excited to be your instructor.
+Now let's jump in and get started.
