@@ -1,32 +1,179 @@
 WEBVTT
 
-00:00.000 --> 00:04.040
-Welcome to my ultimate Gitmastery course.
+00:00.000 --> 00:02.840
+Let's talk about various ways to use Git.
 
-00:04.040 --> 00:07.200
-Over the next five hours, you're going to learn everything you need to know to use Git
+00:02.840 --> 00:07.520
+We can use Git on the command line, so we open a terminal or command prompt window to
 
-00:07.200 --> 00:09.680
-like a pro and work effectively with others.
+00:07.520 --> 00:09.360
+execute Git commands.
 
-00:09.680 --> 00:14.120
-We're going to start off by talking about the fundamental concepts like what is Git,
+00:09.360 --> 00:13.720
+This is the fastest and sometimes the easiest way to get the job done.
 
-00:14.120 --> 00:17.760
-how to install and configure it, and then in each section, we're going to explore a
+00:13.720 --> 00:15.760
+That's why a lot of people use the command line.
 
-00:17.760 --> 00:19.360
-different set of Git tools.
+00:15.760 --> 00:20.280
+Now if you don't like the command line, well, you're in luck, because most modern code
 
-00:19.360 --> 00:24.520
-We'll cover creating snapshots of your code, browsing your project history, branching and
+00:20.280 --> 00:24.520
+editors and IDEs have built-in support for basic Git features.
 
-00:24.520 --> 00:28.480
-merging, collaborating with others using GitHub, and rewriting history.
+00:24.520 --> 00:28.680
+For example, in VS Code, we have this source control panel which gives us the essential
 
-00:28.480 --> 00:31.400
-I'm Mosh Hamidani and I'm super excited to be your instructor.
+00:28.680 --> 00:29.920
+Git features.
 
-00:31.400 --> 00:32.840
-Now let's jump in and get started.
+00:29.920 --> 00:33.920
+There are also extensions available for bringing additional Git features.
+
+00:33.920 --> 00:37.320
+For VS Code, the most popular extension is Git Lens.
+
+00:37.320 --> 00:40.080
+It brings a ton of Git features in VS Code.
+
+00:40.080 --> 00:44.520
+There are also graphical user interfaces specifically made for using Git.
+
+00:44.520 --> 00:47.800
+Here on the Git website, you can find the complete list of these tools for different
+
+00:47.800 --> 00:48.800
+platforms.
+
+00:48.800 --> 00:53.560
+We have tools for Windows, Mac, Linux, Android, and iOS.
+
+00:53.560 --> 00:58.640
+Out of all these, the two most popular tools are Git Kraken and Source Tree.
+
+00:58.640 --> 01:01.840
+Git Kraken is my personal favorite GUI tool for Git.
+
+01:01.840 --> 01:06.040
+It's beautifully designed, it works across different platforms, and it integrates with
+
+01:06.040 --> 01:11.080
+other Git Kraken products such as Git Kraken boards for issue tracking, and Git Kraken
+
+01:11.080 --> 01:13.480
+timelines for project management.
+
+01:13.480 --> 01:18.000
+It's free for open source projects, but for commercial projects, you have to pay an annual
+
+01:18.000 --> 01:19.000
+fee.
+
+01:19.000 --> 01:22.360
+Just to let you know, I'm not an affiliate of Git Kraken, I'm just a fan.
+
+01:22.360 --> 01:24.200
+The other option is Source Tree.
+
+01:24.200 --> 01:28.000
+It's completely free, but it's only available for Windows and Mac.
+
+01:28.000 --> 01:32.360
+So if you're a Linux user, you have to use Git Kraken or another GUI tool.
+
+01:32.360 --> 01:36.040
+In this course, we'll be spending most of our time on the command line for a couple
+
+01:36.040 --> 01:37.120
+of reasons.
+
+01:37.120 --> 01:41.000
+The first reason is that pretty much all of these GUI tools have some limitations.
+
+01:41.000 --> 01:44.280
+They support the Git commands that people use most of the time.
+
+01:44.280 --> 01:48.360
+So even if you want to use a GUI tool, there are times you would have to roll up your sleeves
+
+01:48.360 --> 01:51.360
+and get back to the command line to get the job done.
+
+01:51.360 --> 01:55.200
+The other reason is that the command line is always available, but there are situations
+
+01:55.200 --> 01:58.200
+where a GUI tool may not be available to you.
+
+01:58.200 --> 02:02.160
+You might connect to a server remotely, and you may not have permission to install a GUI
+
+02:02.160 --> 02:03.160
+tool.
+
+02:03.160 --> 02:06.160
+If you don't know how to use the command line, then you're stuck.
+
+02:06.160 --> 02:11.000
+In practice, a lot of people, including myself, use both the command line and a GUI tool,
+
+02:11.000 --> 02:13.000
+and that's what I'm going to show you in this course.
+
+02:13.000 --> 02:16.560
+There are times that it really makes sense to use a GUI tool and not the command line,
+
+02:16.560 --> 02:20.560
+but there are other times that using the command line is faster and easier, so we'll use the
+
+02:20.560 --> 02:21.720
+command line.
+
+02:21.720 --> 02:24.480
+At the end of the day, you should use the right tool for the job.
+
+02:24.760 --> 02:25.960
+Don't be like this guy.
+
+02:25.960 --> 02:27.200
+You probably know him.
+
+02:27.200 --> 02:30.560
+Our popular superstar developer called John Smith.
+
+02:30.560 --> 02:34.280
+He thinks he's better than everyone else because he does everything in the command
+
+02:34.280 --> 02:35.280
+line.
+
+02:35.280 --> 02:37.960
+He never uses a GUI tool and he looks down at people who do.
+
+02:37.960 --> 02:41.480
+Well, let him think whatever he wants if that's what makes him happy.
+
+02:41.480 --> 02:42.480
+Who cares?
+
+02:42.480 --> 02:45.960
+So, we'll be spending most of our time on the command line, but when it makes sense
+
+02:45.960 --> 02:50.640
+to use a GUI tool, I'll be showing you examples in VS Code and Git Kraken because those are
+
+02:50.640 --> 02:52.160
+the most popular tools.
+
+02:52.160 --> 02:55.120
+Now, if you have never worked with a command line before, don't worry.
+
+02:55.120 --> 02:58.640
+I'm going to hold your hands and teach you everything step by step.
+
+02:58.640 --> 03:00.400
+It's a lot easier than you think.
+
+03:00.400 --> 03:01.680
+So next, we're going to install Git.
 

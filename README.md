@@ -33,7 +33,7 @@ we can select Model and accuracy and give suggestion prompts or words here
 
 # thumbnails
 
-ffmpeg -i sample-video-file.mp4 -vf "select=not(mod(n\,300)),scale=320:180" -vsync vfr -q:v 2 thumb%04d.jpg
+bash script
 
 # cmd-2
 

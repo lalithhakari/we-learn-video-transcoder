@@ -1,11 +1,60 @@
 start	end	text
-0	4040	Welcome to my ultimate Gitmastery course.
-4040	7200	Over the next five hours, you're going to learn everything you need to know to use Git
-7200	9680	like a pro and work effectively with others.
-9680	14120	We're going to start off by talking about the fundamental concepts like what is Git,
-14120	17760	how to install and configure it, and then in each section, we're going to explore a
-17760	19360	different set of Git tools.
-19360	24520	We'll cover creating snapshots of your code, browsing your project history, branching and
-24520	28480	merging, collaborating with others using GitHub, and rewriting history.
-28480	31400	I'm Mosh Hamidani and I'm super excited to be your instructor.
-31400	32840	Now let's jump in and get started.
+0	2840	Let's talk about various ways to use Git.
+2840	7520	We can use Git on the command line, so we open a terminal or command prompt window to
+7520	9360	execute Git commands.
+9360	13720	This is the fastest and sometimes the easiest way to get the job done.
+13720	15760	That's why a lot of people use the command line.
+15760	20280	Now if you don't like the command line, well, you're in luck, because most modern code
+20280	24520	editors and IDEs have built-in support for basic Git features.
+24520	28680	For example, in VS Code, we have this source control panel which gives us the essential
+28680	29920	Git features.
+29920	33920	There are also extensions available for bringing additional Git features.
+33920	37320	For VS Code, the most popular extension is Git Lens.
+37320	40080	It brings a ton of Git features in VS Code.
+40080	44520	There are also graphical user interfaces specifically made for using Git.
+44520	47800	Here on the Git website, you can find the complete list of these tools for different
+47800	48800	platforms.
+48800	53560	We have tools for Windows, Mac, Linux, Android, and iOS.
+53560	58640	Out of all these, the two most popular tools are Git Kraken and Source Tree.
+58640	61840	Git Kraken is my personal favorite GUI tool for Git.
+61840	66040	It's beautifully designed, it works across different platforms, and it integrates with
+66040	71080	other Git Kraken products such as Git Kraken boards for issue tracking, and Git Kraken
+71080	73480	timelines for project management.
+73480	78000	It's free for open source projects, but for commercial projects, you have to pay an annual
+78000	79000	fee.
+79000	82360	Just to let you know, I'm not an affiliate of Git Kraken, I'm just a fan.
+82360	84200	The other option is Source Tree.
+84200	88000	It's completely free, but it's only available for Windows and Mac.
+88000	92360	So if you're a Linux user, you have to use Git Kraken or another GUI tool.
+92360	96040	In this course, we'll be spending most of our time on the command line for a couple
+96040	97120	of reasons.
+97120	101000	The first reason is that pretty much all of these GUI tools have some limitations.
+101000	104280	They support the Git commands that people use most of the time.
+104280	108360	So even if you want to use a GUI tool, there are times you would have to roll up your sleeves
+108360	111360	and get back to the command line to get the job done.
+111360	115200	The other reason is that the command line is always available, but there are situations
+115200	118200	where a GUI tool may not be available to you.
+118200	122160	You might connect to a server remotely, and you may not have permission to install a GUI
+122160	123160	tool.
+123160	126160	If you don't know how to use the command line, then you're stuck.
+126160	131000	In practice, a lot of people, including myself, use both the command line and a GUI tool,
+131000	133000	and that's what I'm going to show you in this course.
+133000	136560	There are times that it really makes sense to use a GUI tool and not the command line,
+136560	140560	but there are other times that using the command line is faster and easier, so we'll use the
+140560	141720	command line.
+141720	144480	At the end of the day, you should use the right tool for the job.
+144760	145960	Don't be like this guy.
+145960	147200	You probably know him.
+147200	150560	Our popular superstar developer called John Smith.
+150560	154280	He thinks he's better than everyone else because he does everything in the command
+154280	155280	line.
+155280	157960	He never uses a GUI tool and he looks down at people who do.
+157960	161480	Well, let him think whatever he wants if that's what makes him happy.
+161480	162480	Who cares?
+162480	165960	So, we'll be spending most of our time on the command line, but when it makes sense
+165960	170640	to use a GUI tool, I'll be showing you examples in VS Code and Git Kraken because those are
+170640	172160	the most popular tools.
+172160	175120	Now, if you have never worked with a command line before, don't worry.
+175120	178640	I'm going to hold your hands and teach you everything step by step.
+178640	180400	It's a lot easier than you think.
+180400	181680	So next, we're going to install Git.
