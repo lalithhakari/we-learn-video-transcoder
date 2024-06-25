@@ -1,0 +1,16 @@
+{
+  "name": "we-learn-video-transcoder",
+  "version": "1.0.0",
+  "description": "Video transcoding service with thumnails and subtitles",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "axios": "^1.7.2",
+    "mime-types": "^2.1.35"
+  }
+}
