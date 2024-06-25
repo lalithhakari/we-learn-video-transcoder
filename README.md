@@ -1,5 +1,7 @@
 https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html
 
+docker build -t we-learn-video-transcoder-test-1 .
+
 docker run -it \
 -e USER_ID=2 \
 -e S3_REGION=eu-north-1 \
